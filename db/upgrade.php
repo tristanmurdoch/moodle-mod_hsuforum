@@ -290,7 +290,7 @@ function xmldb_hsuforum_upgrade($oldversion) {
             false // Don't update if local setting already exists.
         );
 
-        // advanced forum savepoint reached.
+        // Advanced Forum savepoint reached.
         upgrade_mod_savepoint(true, 2017120802, 'hsuforum');
     }
 
@@ -320,7 +320,7 @@ function xmldb_hsuforum_upgrade($oldversion) {
             $dbman->add_field($table, $field);
         }
 
-        // advanced forum savepoint reached.
+        // Advanced Forum savepoint reached.
         upgrade_mod_savepoint(true, 2017120804, 'hsuforum');
     }
 

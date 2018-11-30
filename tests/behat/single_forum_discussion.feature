@@ -1,5 +1,5 @@
 @mod @mod_hsuforum
-Feature: advanced forum with single simple forum discussion type
+Feature: Advanced Forum with single simple forum discussion type
   In order to restrict the discussion topic to one
   As a teacher
   I need to create a forum with a single simple discussion
@@ -32,7 +32,7 @@ Feature: advanced forum with single simple forum discussion type
   Scenario: Student can not add more discussions
     Given I log in as "student1"
     And I am on "Course 1" course homepage
-    When I reply "Single discussion forum name" post from "Single discussion forum name" advanced forum with:
+    When I reply "Single discussion forum name" post from "Single discussion forum name" Advanced Forum with:
       | Subject | Reply to single discussion subject |
       | Message | Reply to single discussion message |
     Then I should not see "Add a new discussion"

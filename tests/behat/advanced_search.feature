@@ -1,5 +1,5 @@
 @mod @mod_hsuforum
-Feature: The advanced forum search allows users to perform advanced searches for forum posts
+Feature: The Advanced Forum search allows users to perform advanced searches for forum posts
   In order to perform an advanced search for a forum post
   As a teacher
   I can use the search feature
@@ -20,15 +20,15 @@ Feature: The advanced forum search allows users to perform advanced searches for
       | student1 | C1 | student |
     And I log in as "teacher1"
     And I am on "Course 1" course homepage with editing mode on
-    And I add a "advanced forum" to section "1" and I fill the form with:
+    And I add a "Advanced Forum" to section "1" and I fill the form with:
       | Forum name | Announcements |
       | Forum type | Standard forum for general use |
       | Description | Test forum description |
-    And I add a new topic to "Announcements" advanced forum with:
+    And I add a new topic to "Announcements" Advanced Forum with:
       | Subject | My subject |
       | Message | My message |
     And I am on "Course 1" course homepage
-    And I add a new topic to "Announcements" advanced forum with:
+    And I add a new topic to "Announcements" Advanced Forum with:
       | Subject | My subjective|
       | Message | My long message |
     And I log out
@@ -84,7 +84,7 @@ Feature: The advanced forum search allows users to perform advanced searches for
   Scenario: Perform an advanced search matching the author
     Given I log in as "teacher2"
     And I am on "Course 1" course homepage
-    And I add a new topic to "Announcements" advanced forum with:
+    And I add a new topic to "Announcements" Advanced Forum with:
       | Subject | My Subjects |
       | Message | My message |
     And I log out

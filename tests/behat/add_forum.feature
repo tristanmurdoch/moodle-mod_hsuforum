@@ -1,11 +1,11 @@
 @mod @mod_hsuforum @_file_upload
-Feature: Add advanced forum activities and discussions
+Feature: Add Advanced Forum activities and discussions
   In order to discuss topics with other users
   As a teacher
-  I need to add advanced forum activities to moodle courses
+  I need to add Advanced Forum activities to moodle courses
 
   @javascript
-  Scenario: Add a advanced forum and a discussion attaching files
+  Scenario: Add a Advanced Forum and a discussion attaching files
     Given the following "users" exist:
       | username | firstname | lastname | email |
       | teacher1 | Teacher | 1 | teacher1@example.com |
@@ -19,21 +19,21 @@ Feature: Add advanced forum activities and discussions
       | student1 | C1 | student |
     And I log in as "teacher1"
     And I am on "Course 1" course homepage with editing mode on
-    And I add a "advanced forum" to section "1" and I fill the form with:
+    And I add a "Advanced Forum" to section "1" and I fill the form with:
       | Forum name | Test forum name |
       | Forum type | Standard forum for general use |
       | Description | Test forum description |
-    And I add a new discussion to "Test forum name" advanced forum with:
+    And I add a new discussion to "Test forum name" Advanced Forum with:
       | Subject | Forum post 1 |
       | Message | This is the body |
     And I log out
     And I log in as "student1"
     And I am on "Course 1" course homepage
-    When I add a new discussion to "Test forum name" advanced forum with:
+    When I add a new discussion to "Test forum name" Advanced Forum with:
       | Subject | Post with attachment |
       | Message | This is the body |
       | Attachment | lib/tests/fixtures/empty.txt |
-    And I reply "Forum post 1" post from "Test forum name" advanced forum with:
+    And I reply "Forum post 1" post from "Test forum name" Advanced Forum with:
       | Subject | Reply with attachment |
       | Message | This is the body |
       | Attachment | lib/tests/fixtures/upload_users.csv |
